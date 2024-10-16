@@ -19,6 +19,7 @@ function Form() {
 
   return (
     <form action={formAction} className={formStyle}>
+      {message && <p className="text-red-500">{message}</p>}
       <h2 className="text-2xl capitalize mb-4">create user</h2>
       <input type="text" name="firstName" defaultValue="Peter" required className={inputStyle} />
       <input type="text" name="lastName" defaultValue="Parker" required className={inputStyle} />
